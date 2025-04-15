@@ -290,8 +290,6 @@ sublicense, and/or sell copies of the Software, and to permit persons to whom th
 
 <div align="center">
 
-### Try It Now!
-
 [Latest Release](https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting/releases) | [Report Issues](https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting/issues)
 
 Made by Kent L.
