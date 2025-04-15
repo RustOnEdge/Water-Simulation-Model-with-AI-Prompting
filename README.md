@@ -21,7 +21,7 @@ An innovative fluid simulation framework that combines particle physics with AI-
 
 </div>
 
-## 🎯 Quick Overview
+## 🚀 Setup
 
 ```bash
 # Clone the repository
@@ -83,18 +83,6 @@ git clone https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting
 - Fluid dynamics
 - Spatial partitioning
 - Unity development
-</details>
-
-<details>
-<summary><h2 id="setup">🚀 Setup</h2></summary>
-
-1. Clone this repository
-```bash
-git clone https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting.git
-```
-2. Open the project in Unity
-3. Open the main scene in `Assets/Scenes`
-4. Press Play to start the simulation
 </details>
 
 <details>
