@@ -21,7 +21,7 @@ An innovative fluid simulation framework that combines particle physics with AI-
 
 </div>
 
-## Quick Overview
+## 🎯 Quick Overview
 
 ```bash
 # Clone the repository
@@ -46,7 +46,7 @@ git clone https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting
 ---
 
 <details>
-<summary><h2 id="features">Current Features</h2></summary>
+<summary><h2 id="features">✨ Current Features</h2></summary>
 
 **Core Mechanics**
 - [x] Particle-based fluid simulation
@@ -72,7 +72,7 @@ git clone https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting
 </details>
 
 <details>
-<summary><h2 id="requirements">Requirements</h2></summary>
+<summary><h2 id="requirements">📋 Requirements</h2></summary>
 
 ### Software
 - Unity 2022.3 or higher
@@ -86,7 +86,7 @@ git clone https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting
 </details>
 
 <details>
-<summary><h2 id="setup">Setup</h2></summary>
+<summary><h2 id="setup">🚀 Setup</h2></summary>
 
 1. Clone this repository
 ```bash
@@ -98,7 +98,7 @@ git clone https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting
 </details>
 
 <details>
-<summary><h2 id="documentation">Documentation</h2></summary>
+<summary><h2 id="documentation">📚 Documentation</h2></summary>
 
 ### Components
 
@@ -162,7 +162,7 @@ git clone https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting
 </details>
 
 <details>
-<summary><h2 id="roadmap">Roadmap</h2></summary>
+<summary><h2 id="roadmap">🗺️ Roadmap</h2></summary>
 
 ### 2D Implementation
 - [x] Basic particle system
@@ -218,7 +218,7 @@ git clone https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting
 </details>
 
 <details>
-<summary><h2 id="version-history">Version History</h2></summary>
+<summary><h2 id="version-history">📝 Version History</h2></summary>
 
 Latest Release - v0.3.2 (15/04/2025)
 - Added comprehensive Debug Manager implementation
@@ -237,7 +237,7 @@ See [Version_History.md](Version_History.md) for the complete version history.
 </details>
 
 <details>
-<summary><h2 id="license">License</h2></summary>
+<summary><h2 id="license">⚖️ License</h2></summary>
 
 ```text
 MIT License
@@ -252,7 +252,7 @@ sublicense, and/or sell copies of the Software, and to permit persons to whom th
 </details>
 
 <details>
-<summary><h2 id="acknowledgments">Acknowledgments</h2></summary>
+<summary><h2 id="acknowledgments">👏 Acknowledgments</h2></summary>
 
 ### Core Inspirations
 - Particle physics simulation techniques
@@ -278,7 +278,7 @@ sublicense, and/or sell copies of the Software, and to permit persons to whom th
 
 ---
 
-## Performance
+## 📈 Performance
 
 | Feature | Status | Performance Impact |
 |---------|--------|-------------------|
@@ -287,7 +287,7 @@ sublicense, and/or sell copies of the Software, and to permit persons to whom th
 | Neighbor Search | ✅ | High Improvement |
 | Debug Visualization | ✅ | Low Impact |
 
-## Coming Soon
+## 🔮 Coming Soon
 
 - GPU Acceleration
 - Multi-threading Support
