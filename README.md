@@ -23,45 +23,18 @@ An innovative fluid simulation framework that combines particle physics with AI-
 
 ## 🚀 Setup
 
-### Installation
+1. Clone this repository
 ```bash
-# Clone the repository
 git clone https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting.git
-
-# Navigate to the project directory
-cd Water-Simulation-Model-with-AI-Prompting
 ```
 
-### Unity Setup
-1. Open the project in Unity 2022.3 or later
-2. Open the main scene located at `Assets/Scenes/2D Water Simulation Model.unity`
-3. In the Unity Editor, ensure the "Simulation" object is selected in the hierarchy
+2. Open the project in Unity
+3. Open the main scene in `Assets/Scenes`
 4. Press Play to start the simulation
-
-### Current Development Status
-- ✅ Core fluid simulation is fully functional
-- ✅ Basic particle physics and collision detection are implemented
-- ✅ Debug visualization tools are available
-- 🚧 AI integration features are under development
-- 🚧 Advanced fluid behaviors are being implemented
-- 🚧 Performance optimizations are in progress
-
-### Available Features
-- Real-time particle-based fluid simulation
-- Interactive parameter controls
-- Advanced debug visualization
-- Performance monitoring tools
-
-### Coming Soon
-- AI-powered parameter optimization
-- Natural language control interface
-- Enhanced fluid behaviors
-- Advanced visualization options
-- Performance improvements
 
 ### Key Features at a Glance
 - Real-time particle-based fluid simulation
-- AI-powered parameter optimization (Coming Soon)
+- AI-powered parameter optimization
 - Interactive parameter controls
 - Advanced debug visualization
 
@@ -70,7 +43,7 @@ cd Water-Simulation-Model-with-AI-Prompting
 - Simulation speed control (0.1x - 4.0x)
 - Multiple visualization layers added
 - Performance monitoring (FPS, particle count)
-- Known issues documented for future improvements
+- Known issues documented for future fixes
 
 ---
 
