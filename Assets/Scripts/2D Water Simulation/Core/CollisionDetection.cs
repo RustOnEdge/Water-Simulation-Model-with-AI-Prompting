@@ -23,7 +23,6 @@ public class CollisionDetection
 
         // convert particle position to container's local space
         Vector2 localPos = particle.position - container.Offset;
-        Vector2 rotatedPos = RotatePoint(localPos, -container.Rotation);
 
         // get container half sizes
         float halfWidth = container.Size.x * 0.5f;
@@ -34,43 +33,39 @@ public class CollisionDetection
         Vector2 normal = Vector2.zero;
 
         // left wall
-        if (rotatedPos.x < -halfWidth + particleRadius)
+        if (localPos.x < -halfWidth + particleRadius)
         {
-            rotatedPos.x = -halfWidth + particleRadius;
+            localPos.x = -halfWidth + particleRadius;
             normal = Vector2.right;
             collision = true;
         }
         // right wall
-        else if (rotatedPos.x > halfWidth - particleRadius)
+        else if (localPos.x > halfWidth - particleRadius)
         {
-            rotatedPos.x = halfWidth - particleRadius;
+            localPos.x = halfWidth - particleRadius;
             normal = Vector2.left;
             collision = true;
         }
 
         // bottom wall
-        if (rotatedPos.y < -halfHeight + particleRadius)
+        if (localPos.y < -halfHeight + particleRadius)
         {
-            rotatedPos.y = -halfHeight + particleRadius;
+            localPos.y = -halfHeight + particleRadius;
             normal = Vector2.up;
             collision = true;
         }
         // top wall
-        else if (rotatedPos.y > halfHeight - particleRadius)
+        else if (localPos.y > halfHeight - particleRadius)
         {
-            rotatedPos.y = halfHeight - particleRadius;
+            localPos.y = halfHeight - particleRadius;
             normal = Vector2.down;
             collision = true;
         }
 
         if (collision)
         {
-            // rotate normal back to world space
-            normal = RotatePoint(normal, container.Rotation).normalized;
-
             // update particle position
-            Vector2 worldPos = RotatePoint(rotatedPos, container.Rotation) + container.Offset;
-            particle.position = worldPos;
+            particle.position = localPos + container.Offset;
 
             // reflect velocity
             float velocityAlongNormal = Vector2.Dot(particle.velocity, normal);
@@ -145,16 +140,5 @@ public class CollisionDetection
                !float.IsNaN(particle.position.y) &&
                Mathf.Abs(particle.position.x) <= 1000f && 
                Mathf.Abs(particle.position.y) <= 1000f;
-    }
-
-    private Vector2 RotatePoint(Vector2 point, float angle)
-    {
-        float rad = angle * Mathf.Deg2Rad;
-        float cos = Mathf.Cos(rad);
-        float sin = Mathf.Sin(rad);
-        return new Vector2(
-            point.x * cos - point.y * sin,
-            point.x * sin + point.y * cos
-        );
     }
 } 

@@ -1,13 +1,13 @@
 <div align="center">
 
-# 🌊 Water Simulation Model with AI Prompting
+# Water Simulation Model with AI Prompting
 
 </div>
 
 <div align="center">
 
 ![Unity Version](https://img.shields.io/badge/Unity-2022.3%2B-blue.svg)
-![Status](https://img.shields.io/badge/status-v0.3.2-success.svg)
+![Status](https://img.shields.io/badge/status-v0.3.3-success.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
@@ -21,7 +21,7 @@ An innovative fluid simulation framework that combines particle physics with AI-
 
 </div>
 
-## 🚀 Setup
+## Setup
 
 1. Clone this repository
 ```bash
@@ -41,16 +41,16 @@ git clone https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting
 - Advanced debug visualization
 
 ### Latest Updates
-- New Debug Manager with real-time visualization controls
-- Simulation speed control (0.1x - 4.0x)
-- Multiple visualization layers added
-- Performance monitoring (FPS, particle count)
-- Known issues documented for future fixes
+- New 2D/3D architecture implementation
+- Enhanced particle stability system
+- Improved collision detection
+- Performance optimizations
+- Updated documentation structure
 
 ---
 
 <details>
-<summary><h2 id="features">✨ Current Features</h2></summary>
+<summary><h2 id="features">Current Features</h2></summary>
 
 **Core Mechanics**
 - [x] Particle-based fluid simulation
@@ -76,7 +76,7 @@ git clone https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting
 </details>
 
 <details>
-<summary><h2 id="requirements">📋 Requirements</h2></summary>
+<summary><h2 id="requirements">Requirements</h2></summary>
 
 ### Software
 - Unity 2022.3 or higher
@@ -90,7 +90,7 @@ git clone https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting
 </details>
 
 <details>
-<summary><h2 id="documentation">📚 Documentation</h2></summary>
+<summary><h2 id="documentation">Documentation</h2></summary>
 
 ### Components
 
@@ -154,7 +154,7 @@ git clone https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting
 </details>
 
 <details>
-<summary><h2 id="roadmap">🗺️ Roadmap</h2></summary>
+<summary><h2 id="roadmap">Roadmap</h2></summary>
 
 ### 2D Implementation
 - [x] Basic particle system
@@ -210,26 +210,28 @@ git clone https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting
 </details>
 
 <details>
-<summary><h2 id="version-history">📝 Version History</h2></summary>
+<summary><h2 id="version-history">Version History</h2></summary>
 
-Latest Release - v0.3.2 (15/04/2025)
-- Added comprehensive Debug Manager implementation
-- Introduced simulation speed control with 2.0x default
-- Enhanced visualization system with multiple debug layers
-- Added performance monitoring features
-- Known issues documented for future improvements
+Latest Release - v0.3.3 (16/04/2025)
+- Implemented new 2D/3D architecture
+- Enhanced particle stability system
+- Improved collision detection algorithms
+- Added performance optimizations
+- Updated documentation structure
+- See [CHANGELOG.md](CHANGELOG.md) for detailed changes
 
 Previous Releases
-- v0.3.1 - SPH parameter optimization and visualization update
-- v0.3.0 - Added collision detection and stability improvements
-- v0.2.0 - Implemented spatial partitioning and enhanced container system
-- v0.1.0 - Initial release with basic particle simulation
+- v0.3.2 - Debug Manager and visualization updates
+- v0.3.1 - SPH parameter optimization
+- v0.3.0 - Collision detection improvements
+- v0.2.0 - Spatial partitioning implementation
+- v0.1.0 - Initial release
 
-See [Version_History.md](Version_History.md) for the complete version history.
+See [CHANGELOG.md](CHANGELOG.md) for the complete version history.
 </details>
 
 <details>
-<summary><h2 id="license">⚖️ License</h2></summary>
+<summary><h2 id="license">License</h2></summary>
 
 ```text
 MIT License
@@ -244,7 +246,7 @@ sublicense, and/or sell copies of the Software, and to permit persons to whom th
 </details>
 
 <details>
-<summary><h2 id="acknowledgments">👏 Acknowledgments</h2></summary>
+<summary><h2 id="acknowledgments">Acknowledgments</h2></summary>
 
 ### Core Inspirations
 - Particle physics simulation techniques
@@ -270,7 +272,7 @@ sublicense, and/or sell copies of the Software, and to permit persons to whom th
 
 ---
 
-## 🔮 Coming Soon
+## Coming Soon
 
 - GPU Acceleration
 - Multi-threading Support

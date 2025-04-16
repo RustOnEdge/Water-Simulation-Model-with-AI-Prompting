@@ -4,7 +4,6 @@ using System.Collections.Generic;
 public class Simulation : MonoBehaviour
 {
     [SerializeField] private bool clearParticles = false;
-    [SerializeField] private bool showUniformGrid = false;
     
     [Header("simulation settings")]
     [SerializeField] private int maxParticles = 450;
@@ -197,12 +196,6 @@ public class Simulation : MonoBehaviour
                 debugManager.DrawParticleDebug();
             }
 
-            // Draw grid
-            if (debugManager.showNeighbourGrid)
-            {
-                debugManager.DrawGridDebug();
-            }
-
             // Draw container
             if (debugManager.showContainerBounds)
             {
@@ -224,6 +217,5 @@ public class Simulation : MonoBehaviour
     public float GetRestDensity() { return restDensity; }
     public float GetGasConstant() { return gasConstant; }
     public int GetActiveParticleCount() { return activeParticles; }
-    public NeighbourSearch GetNeighbourSearch() { return neighbourSearch; }
     public Particle[] GetParticles() { return particles; }
 } 

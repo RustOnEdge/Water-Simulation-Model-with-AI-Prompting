@@ -8,7 +8,6 @@ public class DebugManager : MonoBehaviour
     public bool showParticleVelocities = false;
     public bool showDensityColors = true;
     public bool showPressureForces = false;
-    public bool showNeighbourGrid = false;
     public bool showContainerBounds = true;
 
     [Header("Performance")]
@@ -22,7 +21,6 @@ public class DebugManager : MonoBehaviour
     [SerializeField] private Color32 densityMinColor = new Color32(102, 178, 255, 255);
     [SerializeField] private Color32 densityMaxColor = new Color32(0, 51, 204, 255);
     [SerializeField] private Color32 pressureColor = new Color32(255, 255, 255, 255);
-    [SerializeField] private Color32 gridColor = new Color32(128, 128, 128, 77);
     [SerializeField] private Color32 containerColor = new Color32(255, 255, 255, 255);
 
     [Header("Debug Parameters")]
@@ -41,7 +39,6 @@ public class DebugManager : MonoBehaviour
 
     // Cached components and values
     private Simulation simulation;
-    private NeighbourSearch neighbourSearch;
     private Container container;
     private Transform cachedTransform;
     private float fps;
@@ -60,10 +57,6 @@ public class DebugManager : MonoBehaviour
         cachedTransform = transform;
         simulation = GetComponent<Simulation>();
         container = GetComponent<Container>();
-        if (simulation != null)
-        {
-            neighbourSearch = simulation.GetNeighbourSearch();
-        }
 
         // Initialize line arrays
         lineVertices = new NativeArray<Vector3>(MAX_LINES * 2, Allocator.Persistent);
@@ -134,11 +127,6 @@ public class DebugManager : MonoBehaviour
             DrawParticleDebug();
         }
 
-        if (showNeighbourGrid && neighbourSearch != null)
-        {
-            DrawGridDebug();
-        }
-
         if (showContainerBounds && container != null)
         {
             DrawContainerDebug();
@@ -200,61 +188,25 @@ public class DebugManager : MonoBehaviour
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public void DrawGridDebug()
-    {
-        Vector2 offset = neighbourSearch.GridOffset;
-        Vector2Int dimensions = neighbourSearch.GridDimensions;
-        float cellSize = neighbourSearch.CellSize;
-
-        // Draw vertical lines
-        for (int x = 0; x <= dimensions.x && currentLineCount < MAX_LINES; x++)
-        {
-            float xPos = offset.x + x * cellSize;
-            AddLine(
-                new Vector3(xPos, offset.y),
-                new Vector3(xPos, offset.y + dimensions.y * cellSize),
-                gridColor
-            );
-        }
-
-        // Draw horizontal lines
-        for (int y = 0; y <= dimensions.y && currentLineCount < MAX_LINES; y++)
-        {
-            float yPos = offset.y + y * cellSize;
-            AddLine(
-                new Vector3(offset.x, yPos),
-                new Vector3(offset.x + dimensions.x * cellSize, yPos),
-                gridColor
-            );
-        }
-    }
-
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public void DrawContainerDebug()
     {
         Vector3 center = cachedTransform.position + (Vector3)(Vector2)container.Offset;
         Vector2 size = container.Size;
-        float rotation = container.Rotation;
-
-        Matrix4x4 oldMatrix = Gizmos.matrix;
-        Gizmos.matrix = Matrix4x4.TRS(center, Quaternion.Euler(0, 0, rotation), Vector3.one);
 
         // Draw container bounds
         Vector3 halfSize = new Vector3(size.x * 0.5f, size.y * 0.5f, 0);
         Vector3[] corners = new Vector3[]
         {
-            new Vector3(-halfSize.x, -halfSize.y),
-            new Vector3(halfSize.x, -halfSize.y),
-            new Vector3(halfSize.x, halfSize.y),
-            new Vector3(-halfSize.x, halfSize.y)
+            center + new Vector3(-halfSize.x, -halfSize.y),
+            center + new Vector3(halfSize.x, -halfSize.y),
+            center + new Vector3(halfSize.x, halfSize.y),
+            center + new Vector3(-halfSize.x, halfSize.y)
         };
 
         for (int i = 0; i < 4 && currentLineCount < MAX_LINES; i++)
         {
             AddLine(corners[i], corners[(i + 1) % 4], containerColor);
         }
-
-        Gizmos.matrix = oldMatrix;
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
