@@ -226,7 +226,7 @@ Previous Releases
 - v0.2.0 - Spatial partitioning implementation
 - v0.1.0 - Initial release
 
-For a detailed history of all changes, improvements, and fixes, please refer to our [Version History](VERSIONHISTORY.md).
+For a detailed history of all changes, improvements, and fixes, please refer to [Version History](VERSIONHISTORY.md).
 </details>
 
 <details>
