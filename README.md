@@ -270,15 +270,6 @@ sublicense, and/or sell copies of the Software, and to permit persons to whom th
 
 ---
 
-## 📈 Performance
-
-| Feature | Status | Performance Impact |
-|---------|--------|-------------------|
-| Spatial Partitioning | ✅ | High Improvement |
-| Collision Detection | ✅ | Moderate Impact |
-| Neighbor Search | ✅ | High Improvement |
-| Debug Visualization | ✅ | Low Impact |
-
 ## 🔮 Coming Soon
 
 - GPU Acceleration
