@@ -218,7 +218,7 @@ Latest Release - v0.3.3 (16/04/2025)
 - Improved collision detection algorithms
 - Added performance optimizations
 - Updated documentation structure
-- See [CHANGELOG.md](CHANGELOG.md) for detailed changes
+- See [VERSIONHISTORY.md](VERSIONHISTORY.md) for detailed changes
 
 Previous Releases
 - v0.3.2 - Debug Manager and visualization updates
@@ -227,7 +227,7 @@ Previous Releases
 - v0.2.0 - Spatial partitioning implementation
 - v0.1.0 - Initial release
 
-See [CHANGELOG.md](CHANGELOG.md) for the complete version history.
+See [VERSIONHISTORY.md](VERSIONHISTORY.md) for the complete version history.
 </details>
 
 <details>
