@@ -17,7 +17,7 @@ An innovative fluid simulation framework that combines particle physics with AI-
 
 <br>
 
-**[Check out the demo video and latest builds →](https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting/releases)**
+**[Check out the demo video and latest builds (Soon) →](https://github.com/RustOnEdge/Water-Simulation-Model-with-AI-Prompting/releases)**
 
 </div>
 
