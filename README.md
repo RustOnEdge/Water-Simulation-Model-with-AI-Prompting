@@ -273,6 +273,7 @@ sublicense, and/or sell copies of the Software, and to permit persons to whom th
 
 ## Coming Soon
 
+- 3D Implementation
 - GPU Acceleration
 - Multi-threading Support
 - Advanced Fluid Effects
